@@ -8,8 +8,10 @@
 
 *Vagrantfile, который сразу собирает систему с подключенным рейдом и смонтированными разделами. После перезагрузки стенда разделы должны автоматически примонтироваться.
 
-lsblk До создания рейда:
- mdadm: NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+**lsblk** До создания рейда:
+   
+    ##################################################
+     mdadm: NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
     mdadm: sda      8:0    0   40G  0 disk
     mdadm: └─sda1   8:1    0   40G  0 part /
     mdadm: sdb      8:16   0  250M  0 disk
@@ -17,9 +19,11 @@ lsblk До создания рейда:
     mdadm: sdd      8:48   0  250M  0 disk
     mdadm: sde      8:64   0  250M  0 disk
     mdadm: sdf      8:80   0  250M  0 disk
-    ##################################################
-lsblk После создания рейда:
-   mdadm: NAME        MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
+    
+**lsblk** После создания рейда:
+
+    ######################################
+    mdadm: NAME        MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
     mdadm: sda           8:0    0    40G  0 disk
     mdadm: └─sda1        8:1    0    40G  0 part  /
     mdadm: sdb           8:16   0   250M  0 disk
@@ -59,7 +63,7 @@ lsblk После создания рейда:
     mdadm:   └─md100p5 259:4    0   147M  0 md    /raid/part5
 
     
-    fstab:
+    **fstab**:
     mdadm: #
     mdadm: # /etc/fstab
     mdadm: # Created by anaconda on Thu Apr 30 22:04:55 2020
