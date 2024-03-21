@@ -17,6 +17,7 @@ lsblk До создания рейда:
     mdadm: sdd      8:48   0  250M  0 disk
     mdadm: sde      8:64   0  250M  0 disk
     mdadm: sdf      8:80   0  250M  0 disk
+    
 lsblk После создания рейда:
    mdadm: NAME        MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
     mdadm: sda           8:0    0    40G  0 disk
@@ -57,7 +58,7 @@ lsblk После создания рейда:
     mdadm:   ├─md100p4 259:3    0 148.5M  0 md    /raid/part4
     mdadm:   └─md100p5 259:4    0   147M  0 md    /raid/part5
 
-
+    
     fstab:
     mdadm: #
     mdadm: # /etc/fstab
