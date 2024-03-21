@@ -17,7 +17,7 @@ lsblk До создания рейда:
     mdadm: sdd      8:48   0  250M  0 disk
     mdadm: sde      8:64   0  250M  0 disk
     mdadm: sdf      8:80   0  250M  0 disk
-    
+    ##################################################
 lsblk После создания рейда:
    mdadm: NAME        MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
     mdadm: sda           8:0    0    40G  0 disk
